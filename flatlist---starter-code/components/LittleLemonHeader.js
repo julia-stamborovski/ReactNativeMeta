@@ -1,11 +1,11 @@
 import * as React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { Text, StyleSheet, SafeAreaView } from 'react-native';
 
 export default function LittleLemonHeader() {
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}> 
       <Text style={styles.headerText}>Little Lemon</Text>
-    </View>
+    </SafeAreaView>
   );
 }
 
@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#EE9972',
   },
   headerText: {
-    padding: 40,
+    padding: 5,
     fontSize: 30,
     color: 'black',
     textAlign: 'center',
